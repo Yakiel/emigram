@@ -1,0 +1,55 @@
+@import './modulos/_variables.sass'
+@import url('https://fonts.googleapis.com/css?family=Pacifico')
+
+$theme : $naranja
+
+.header
+    width : 100%
+    height : 80px
+    background : #fff
+    position : fixed
+    display : flex
+    z-index : 1000
+    box-shadow : 0 8px 15px rgba(#333,.3)
+    
+    &__container
+        margin : auto
+        width : 80%
+        height : 50%
+        display : flex
+        justify-content : space-between
+        align-items : center
+        
+        i
+            font-size : 1.5em
+            color : rgba($theme,.5) 
+        h2
+            font-family : 'Pacifico'
+            color : darken($theme,4%)
+
+.form
+    width : 200px
+    height : 30px
+    background : transparent
+    display : flex
+    position : relative
+    
+    &__input
+        margin : auto
+        height : 30px
+        width : 50%
+        border : none
+        position : relative
+        background : transparent
+        outline : none
+        border-bottom : 2px solid rgba($theme,.3)
+        transition : all .7s
+        &:focus
+            width : 100%
+            border-bottom : 2px solid rgba($theme,.8)
+            
+    &__label
+        position : absolute
+        top : .2em
+        left : 50%
+        margin-left : -25px
